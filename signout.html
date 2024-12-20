@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>サインアウト | arcana426</title>
+    <meta name="description" content="サインアウト | arcana426" />
+    <meta name="keywords" content="arcana426, Arcana426, signout, Signout, Arcana, arcana" />
+    <meta id="csp" http-equiv="Content-Security-Policy" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="Feature-Policy" content="microphone 'none'; camera 'none'" />
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
+    <meta http-equiv="Origin-Isolation" content="isolate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta name="theme-color" content="#ffffd6" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div class="box">
+        <div class="user-profile mb-5">
+          <figure class="image is-128x128 mx-auto mb-4">
+            <img id="userImage" class="is-rounded" src="" alt="プロフィール画像">
+          </figure>
+          <h2 id="userName" class="title is-4 has-text-centered"></h2>
+          <p id="userEmail" class="subtitle is-6 has-text-centered"></p>
+        </div>
+
+        <div class="buttons is-centered">
+          <button id="signoutButton" class="button is-danger">
+            サインアウト
+          </button>
+          <a href="index.html" class="button is-light">
+            キャンセル
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/signout.js"></script>
+  </body>
+</html>

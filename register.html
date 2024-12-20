@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>アカウント登録 | arcana426</title>
+    <meta name="description" content="アカウント登録 | arcana426" />
+    <meta name="keywords" content="arcana426, Arcana426, register, Register, Arcana, arcana" />
+    <meta id="csp" http-equiv="Content-Security-Policy" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="Feature-Policy" content="microphone 'none'; camera 'none'" />
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
+    <meta http-equiv="Origin-Isolation" content="isolate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta name="theme-color" content="#ffffd6" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <div id="customModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">エラー</h2>
+        <p id="modalMessage">詳細情報</p>
+      </div>
+    </div>
+
+    <div id="container" class="container">
+      <h1 class="title">アカウント登録</h1>
+      <p>Googleアカウントで登録してください。</p>
+      
+      <div id="error-message" class="notification is-danger"></div>
+      <div id="success-message" class="notification is-success"></div>
+      
+      <div
+        id="g_id_onload"
+        data-client_id="900815271183-2s26pm30nftccia7ld0odsjq8o7g67vr.apps.googleusercontent.com"
+        data-callback="handleCredentialResponse"
+      ></div>
+      <div class="g_id_signin" data-type="standard"></div>
+
+      <div class="mt-4 has-text-centered">
+        <a href="index.html" class="button is-link is-light">ログインページへ戻る</a>
+      </div>
+    </div>
+
+    <script type="module" src="./src/register.js"></script>
+  </body>
+</html>

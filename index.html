@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Login | arcana426</title>
+    <meta name="description" content="Login | arcana426" />
+    <meta name="keywords" content="arcana426, Arcana426, login, Login, Arcana, arcana" />
+    <meta name="google-site-verification" content="0dv6iqb7Pypeb7cJby0PoKkBnG_UKBYP0vy0lYnjrCU" />
+    <meta id="csp" http-equiv="Content-Security-Policy" content="" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="Feature-Policy" content="microphone 'none'; camera 'none'" />
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
+    <meta http-equiv="Origin-Isolation" content="isolate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta name="theme-color" content="#ffffd6" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <meta property="og:url" content="https://arcana426.42web.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Login | arcana426" />
+    <meta property="og:description" content="Login | arcana426" />
+    <meta property="og:site_name" content="Login | arcana426" />
+    <meta property="og:image" content="https://arcana426.42web.io/favicon-96x96.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@arcana426_dev" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <div id="customModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">エラー</h2>
+        <p id="modalMessage">詳細情報</p>
+      </div>
+    </div>
+
+    <div id="container" class="container">
+      <div class="login-container">
+        <h1 class="title">Google Login</h1>
+        <p>Googleアカウントでログインしてください。</p>
+        <div class="buttons is-centered mb-4">
+          <a href="register.html" class="button is-link">アカウントを作成する</a>
+        </div>
+        <div id="error-message" class="notification is-danger" style="display: none;"></div>
+        <div id="success-message" class="notification is-success" style="display: none;"></div>
+        <div class="google-signin-container">
+          <div
+            id="g_id_onload"
+            data-client_id="900815271183-2s26pm30nftccia7ld0odsjq8o7g67vr.apps.googleusercontent.com"
+            data-context="signin"
+            data-callback="handleCredentialResponse"
+            data-auto_select="false"
+          ></div>
+          <div 
+            class="g_id_signin"
+            data-type="standard"
+            data-size="large"
+            data-theme="outline"
+            data-text="signin_with"
+            data-shape="rectangular"
+            data-width="250"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/script.js"></script>
+  </body>
+</html>
