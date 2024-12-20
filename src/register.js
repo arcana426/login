@@ -19,5 +19,7 @@ function initializeAuth() {
   GoogleAuthService.initialize((userData) => {
     NotificationService.showSuccess(`ようこそ、${userData.name}さん！`);
     setTimeout(() => redirectToHome(), 1000);
+  }, {
+    auto_select: false // ポップアップを自動的に表示させない設定を追加
   });
 }
