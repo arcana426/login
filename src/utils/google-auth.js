@@ -1,7 +1,7 @@
 import { logError } from './error-handler.js';
 import { handleCredentialResponse } from './auth-callbacks.js';
 
-const GOOGLE_CLIENT_ID = '900815271183-2s26pm30nftccia7ld0odsjq8o7g67vr.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '900815271183-o6knmghr75ol1gf5f3o3c21mkl8qpnpu.apps.googleusercontent.com';
 const RETRY_INTERVAL = 100;
 const MAX_RETRIES = 50;
 
